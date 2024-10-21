@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <title>Oye Gelda!</title>
+    </head>
+<body>
+    <div>    
+        <h1> Bienvenido al programa </h1>
+    </div>
+    <form onsubmit = "return validarPeso(event)" >
+        <label for="peso"><h3>Ingresa tu peso en KG: </h3></label>
+        <input id= 'peso' type="number" name="PesoKilos" min="1" max="1000" required>
+
+        <input type="submit" value="Enviar">
+    </form>
+
+    <div id="mensaje" style="margin-top: 20px; font-size:medium; font-weight: Roboto; text-align: center;"></div>
+    <div id="imagen" style="position: center;"></div>
+    <script src="logica.js"></script>
+</body>
+</html>
